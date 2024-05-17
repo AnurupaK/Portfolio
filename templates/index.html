@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Font-Family DM Sans Serif -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- JS for copying EMAIL Id in Home Tab -->
+    <script>
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el); 
+            alert('Email Id copied to clipboard '+ text);
+        }
+    </script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>PORTFOLIO</title>
+</head>
+
+<body>
+    <!-- Header-->
+    <header class="header">
+        <a href="#" class="logo">Know Me <span style="font-size: 2.5rem;">😊</span> 
+        </a>
+
+        <i class="fa-solid fa-bars" if="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, Everyone</h3>
+            <h1>I am Anurupa Karmakar</h1>
+            <h3>I work in <span class="multiple-text"></span></h3>
+            <p>Aspiring data scientist passionate about extracting insights from data. Experienced in statistics, machine learning, and programming. Dedicated to solving real-world problems collaboratively.</p>
+            <div class="social-media">
+                <a href="https://de.linkedin.com/in/anurupa-karmakar-a1b82a174" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AnurupaK" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Anurupa_K?t=GpwM4zEC_OUENQW5xRg2CQ&s=09" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:anurupakarmakar.dgp18@gmail.com" onclick="copyToClipboard('anurupakarmakar.dgp18@gmail.com')"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <a href="https://resume-nu-pied.vercel.app/
+            " target="_blank" class="btn">View my CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./static/images/anu.jpg" alt="Couldn't load image">
+        </div>
+    </section>
+
+    
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Portfolio <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./static/images/diabetes.jpg" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Diabetes Prediction</h4>
+                    <p>Diabetes prediction with ML deployed using Render.Learn more..</p>  
+                    <a href="https://github.com/AnurupaK/Diabetes_Prediction_Render" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./static/images/spam_mail.jpg" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Spam Mail Detector</h4>
+                    <p>Spam Mail Detector deployed using Flask with Logistic Regression model.Learn more...</p>  
+                    <a href="https://github.com/AnurupaK/Spam_Mail_Detector" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./static/images/python_package.jpg" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Python Package</h4>
+                    <p>Python Package publish on PyPi: ImageDimensionChecker. Learn more..</p>  
+                    <a href="https://github.com/AnurupaK/ImageDimensionChecker" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./static/images/coffee.png" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Coffee Machine App</h4>
+                    <p>Deployment of a Coffee Machine App with Vercel.Learn more..</p>  
+                    <a href="https://github.com/AnurupaK/Coffee_Machine_Vercel" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./static/images/cat_vs_dog.jpg" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Cat Vs Dog</h4>
+                    <p>Dog vs. Cat Classification with MobileNet, Deployed on Render.Learn more..</p>  
+                    <a href="https://github.com/AnurupaK/MobileNet_Render" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="./static/images/cat_vs_dog.jpg" alt="Couldn't load image">
+                <div class="portfolio-layer">
+                    <h4>Regular cat</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>  
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box" id="services-box-1">
+                <i class="fa-solid fa-code"></i>
+                <h3>Programming</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt cumque, similique exercitationem laboriosam laborum est, atque facilis consequatur possimus molestias eum ipsum! Libero, dignissimos!</p> -->
+                <!-- <p>I am proficient in Python, C++ and also use HTML, CSS and JS for full stack development. I have used programming languages for my projects and have practised it for several years. </p> -->
+                <p><span>" </span>With strong proficiency in Python and C++, honed through diverse project experiences, I bring versatile coding skills to the table. From developing algorithms to optimizing code performance, I'm equipped to tackle various challenges efficiently and effectively drive impactful solutions.<span> "</span></p>
+                 <a href="https://github.com/AnurupaK" class="btn">View Projects</a>
+            </div>
+
+            <div class="services-box" id="services-box-2">
+                <br>
+                <i class="fa-solid fa-cogs"></i>
+                <h3>ML/DL Deployemnt</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt cumque, similique exercitationem laboriosam laborum est, atque facilis consequatur possimus molestias eum ipsum! Libero, dignissimos!</p> -->
+                <p><span>" </span>Leveraging expertise in data analysis, machine learning, and deployment, I use Python and statistical techniques to extract insights. Specializing in ML/DL model deployment with platforms like Vercel and Render, I ensure seamless integration and scalability.<span> "</span></p>
+                 <a href="https://github.com/AnurupaK" class="btn">View Projects</a>
+                 
+    
+            </div>
+
+            <div class="services-box" id="services-box-3">
+                <br>
+                <!-- <img width="22" height="24" src="https://img.icons8.com/badges/25/artificial-intelligence.png" alt="artificial-intelligence"/> -->
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt cumque, similique exercitationem laboriosam laborum est, atque facilis consequatur possimus molestias eum ipsum! Libero, dignissimos!</p> -->
+                <p><span>" </span>Proficient in HTML, CSS, and JavaScript, I specialize in crafting responsive and dynamic web applications that engage users. With a blend of creativity and technical expertise, I deliver high-quality solutions, ensuring exceptional front-end design and seamless functionality.<span> "</span></p>
+                 <a href="https://github.com/AnurupaK" class="btn"> View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./static/images/about_me.jpg" alt="Couldn't load image" style="border-radius: 274px;">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Data Scientist Enthusiast</h3>
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam necessitatibus nesciunt, atque ipsum cum minus laboriosam quibusdam eius placeat deserunt esse soluta consequatur nostrum debitis. Maiores, unde quasi doloribus reprehenderit aliquam fugiat, officiis quo odit deserunt fugit eius aliquid. Molestias explicabo ut eius. Dignissimos explicabo, quas vero quae fugiat mollitia?</p> -->
+            <p style="text-align: justify;">Hi! I’m Anurupa, an aspiring data scientist and tech enthusiast. I've always been fascinated by how real-world applications  function, how we extract meaningful insights from data, and how tech giants create stunning, user-friendly websites<br><br>
+                
+                My educational journey through an MTech at IIT Jodhpur and a BTech at NIT Durgapur has equipped me with strong skills in programming, machine learning, and web development. I've had enriching experiences interning at Charité – Universitätsmedizin Berlin and Purdue University, where I delved into computational neuroscience and bioinformatics.<br><br>
+                
+                I thrive on exploring new technologies and applying my knowledge to solve real-world problems. Whether it's crafting dynamic web applications, deploying robust machine learning models, or analyzing complex datasets, I'm always excited to tackle new challenges.<br><br>
+                
+                
+                <span> Outside of my professional pursuits, I enjoy coding, painting, traveling, and dancing. I'm passionate about continuous learning and eager to connect with like-minded individuals. Let’s collaborate and create something amazing together!</span></p>
+            <!-- <a href="#" class="btn">Read more</a> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="/send_email" method="post">
+            <div class="input-box">
+                <input name ="fullname" type="text" placeholder="Full name" value="{{ fullname }}">
+                <input name="email" type="email" placeholder="Email Address" value="{{email}}">
+            </div>
+
+            <div class="input-box">
+                <input name="subject" type="text" placeholder="Email Subject" value="{{subject}}">
+                <input name="mob_number" type="number" placeholder="Mobile Number" value="{{mobile}}">
+            </div>
+
+            <textarea name="message" id="message2" cols="30" rows="10" placeholder="Your Message">{{message}}</textarea>
+            <input type="submit" value="Send Message" class = "btn">
+        </form>
+
+        {% if success %}
+    <div class="success-message">
+        <p>Message sent successfully!</p>
+    </div>
+    {% endif %}
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Thanks for visiting my Portfolio Website <i class="fa-solid fa-heart"></i> </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Main JS -->
+    <script src="./static/js/main.js"></script>
+
+</body>
+
+</html>
