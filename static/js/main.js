@@ -52,7 +52,7 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin:'right' });
 
 /*=================Typed Js=====================*/
 const typed = new Typed('.multiple-text', {
-    strings: ["Data Science", "Computational Neuroscience","Artifical Intelligence"],
+    strings: ["Data Science", "Computational Neuroscience","Artificial Intelligence"],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
